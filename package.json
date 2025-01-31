@@ -1,0 +1,81 @@
+{
+    "name": "@bodil/collections",
+    "version": "0.1.0",
+    "description": "Assorted data structures",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bodil/collections.git"
+    },
+    "license": "EUPL-1.2+",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js"
+            }
+        },
+        "./lfu-cache": {
+            "import": {
+                "types": "./dist/lfu-cache.d.ts",
+                "import": "./dist/lfu-cache.js"
+            }
+        },
+        "./linked-list": {
+            "import": {
+                "types": "./dist/linked-list.d.ts",
+                "import": "./dist/linked-list.js"
+            }
+        },
+        "./lru-cache": {
+            "import": {
+                "types": "./dist/lru-cache.d.ts",
+                "import": "./dist/lru-cache.js"
+            }
+        },
+        "./ordered-map": {
+            "import": {
+                "types": "./dist/ordered-map.d.ts",
+                "import": "./dist/ordered-map.js"
+            }
+        },
+        "./ordered-set": {
+            "import": {
+                "types": "./dist/ordered-set.d.ts",
+                "import": "./dist/ordered-set.js"
+            }
+        }
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest --run",
+        "lint": "eslint src",
+        "prepublish": "tsc"
+    },
+    "dependencies": {
+        "@bodil/core": "^0.1.0",
+        "@bodil/disposable": "^0.1.0",
+        "@bodil/monkey-business": "^0.1.0",
+        "@bodil/opt": "^0.2.6"
+    },
+    "devDependencies": {
+        "@bodil/opt-vitest": "^1.0.0",
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.19.0",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^9.19.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-jsdoc": "^50.6.3",
+        "globals": "^15.14.0",
+        "typescript": "^5.7.3",
+        "vitest": "^3.0.4"
+    }
+}
