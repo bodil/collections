@@ -1,6 +1,6 @@
 {
     "name": "@bodil/collections",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Assorted data structures",
     "repository": {
         "type": "git",
