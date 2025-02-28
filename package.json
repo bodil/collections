@@ -37,18 +37,6 @@
                 "types": "./dist/lru-cache.d.ts",
                 "import": "./dist/lru-cache.js"
             }
-        },
-        "./ordered-map": {
-            "import": {
-                "types": "./dist/ordered-map.d.ts",
-                "import": "./dist/ordered-map.js"
-            }
-        },
-        "./ordered-set": {
-            "import": {
-                "types": "./dist/ordered-set.d.ts",
-                "import": "./dist/ordered-set.js"
-            }
         }
     },
     "publishConfig": {
@@ -61,22 +49,27 @@
         "prepublish": "tsc"
     },
     "dependencies": {
-        "@bodil/core": "^0.1.0",
-        "@bodil/disposable": "^0.1.0",
-        "@bodil/monkey-business": "^0.1.0",
+        "@bodil/core": "^0.1.1",
+        "@bodil/disposable": "^0.1.2",
+        "@bodil/monkey-business": "^0.1.2",
         "@bodil/opt": "^0.2.6"
     },
     "devDependencies": {
         "@bodil/opt-vitest": "^1.0.0",
-        "@eslint/eslintrc": "^3.2.0",
-        "@eslint/js": "^9.19.0",
-        "@typescript-eslint/eslint-plugin": "^8.22.0",
-        "@typescript-eslint/parser": "^8.22.0",
-        "eslint": "^9.19.0",
-        "eslint-config-prettier": "^10.0.1",
+        "@eslint/eslintrc": "^3.3.0",
+        "@eslint/js": "^9.21.0",
+        "@typescript-eslint/eslint-plugin": "^8.25.0",
+        "@typescript-eslint/parser": "^8.25.0",
+        "eslint": "^9.21.0",
+        "eslint-config-prettier": "^10.0.2",
         "eslint-plugin-jsdoc": "^50.6.3",
-        "globals": "^15.14.0",
+        "globals": "^15.15.0",
         "typescript": "^5.7.3",
-        "vitest": "^3.0.4"
+        "vitest": "^3.0.7"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }
